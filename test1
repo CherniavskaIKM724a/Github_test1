@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "Enter number:";
+    cin >> n;
+    if (n > -101 && n < 1 || n>22 && n < 91 || n>144 && n < 159)
+    {
+        cout << "The number belongs to the interval: [-100..0]; [23..90]; [145..158]\n";
+        if (n > 22 && n < 91) cout << n << "%38=" << n % 38;
+    }
+    else cout << "The number doesn't belong to the interval: [-100..0]; [23..90]; [145..158]";
+}
+
